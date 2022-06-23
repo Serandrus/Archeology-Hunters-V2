@@ -37,12 +37,16 @@ public class Dialogue_Scene_One : MonoBehaviour
                 textComponent.text = lines[index];
             }
         }
+
+        
+
     }
 
     void StartDialogue()
     {
         index = 0;
         StartCoroutine(TypeLine());
+        FindObjectOfType<AudioManager>().Play("Linea de Dialogo 1");
     }
 
     IEnumerator TypeLine()
@@ -62,10 +66,27 @@ public class Dialogue_Scene_One : MonoBehaviour
             index++;
             textComponent.text = string.Empty;
             StartCoroutine(TypeLine());
+
+            switch (index)
+            {
+                case 1:
+                    FindObjectOfType<AudioManager>().Pause("Linea de Dialogo 1");
+                    FindObjectOfType<AudioManager>().Play("Linea de Dialogo 2");
+                    break;
+                case 2:
+                    FindObjectOfType<AudioManager>().Pause("Linea de Dialogo 2");
+                    FindObjectOfType<AudioManager>().Play("Linea de Dialogo 3");
+                    break;
+                case 3:
+                    FindObjectOfType<AudioManager>().Pause("Linea de Dialogo 3");
+                    FindObjectOfType<AudioManager>().Play("Linea de Dialogo 4");
+                    break;
+            }
         }
         else
         {
             index = 4;
+            FindObjectOfType<AudioManager>().Pause("Linea de Dialogo 4");
             antonio.SetActive(false);
             gameObject.SetActive(false);
         }

@@ -56,26 +56,26 @@ MonoBehaviour:
     pitch: 0
     loop: 0
     source: {fileID: 0}
-  - name: Musica_Base
-    clip: {fileID: 0}
-    volume: 0.75
-    pitch: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: Musica_Laberinto
-    clip: {fileID: 0}
+  - name: Linea de Dialogo 1
+    clip: {fileID: 8300000, guid: 36d23f6a002b3a24fa10e951d4f73ac6, type: 3}
     volume: 0.75
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: Musica_Excavar
-    clip: {fileID: 0}
+  - name: Linea de Dialogo 2
+    clip: {fileID: 8300000, guid: 41b17691ad6a7084ab8f4ff54c8e0977, type: 3}
     volume: 0.75
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: Musica_DatacionFechas
-    clip: {fileID: 0}
+  - name: Linea de Dialogo 3
+    clip: {fileID: 8300000, guid: 36d23f6a002b3a24fa10e951d4f73ac6, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Linea de Dialogo 4
+    clip: {fileID: 8300000, guid: 41b17691ad6a7084ab8f4ff54c8e0977, type: 3}
     volume: 0.75
     pitch: 1
     loop: 0
