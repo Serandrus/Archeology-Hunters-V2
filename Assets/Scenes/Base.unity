@@ -2552,7 +2552,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Asegurese de estar en el terreno de juego y que el gps de su dispositivo
+  m_Text: "Asegurese de estar en el terreno de juego y que el GPS  de su dispositivo
     est\xE9 activo para poder disfrutar de la experiencia"
 --- !u!222 &415568371
 CanvasRenderer:
@@ -6313,6 +6313,7 @@ GameObject:
   - component: {fileID: 1741727325}
   - component: {fileID: 1741727324}
   - component: {fileID: 1741727323}
+  - component: {fileID: 1741727326}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -6378,13 +6379,31 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1741727322}
-  m_LocalRotation: {x: 0.31808597, y: 0.03954535, z: -0.013295455, w: 0.9471435}
-  m_LocalPosition: {x: -0.9589844, y: 4.5617843, z: -2.0621758}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalRotation: {x: 0.09421612, y: 0.041533325, z: -0.0039480035, w: 0.99467725}
+  m_LocalPosition: {x: -1.76, y: 1.58, z: -6.17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 200025093}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 37.128, y: 4.781, z: -0.002}
+  m_LocalEulerAnglesHint: {x: 10.8220005, y: 4.782, z: -0.002}
+--- !u!114 &1741727326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741727322}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 018925a6bb36883419cb6132093c784c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 200025093}
+  camOffset: {x: 0, y: 0, z: 0}
+  lookAtPlayer: 0
+  isRotationActive: 1
+  velRotation: 5
+  smoothFactor: 1
 --- !u!1001 &1751316593
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7935,8 +7954,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00012207031, y: -299.88892}
-  m_SizeDelta: {x: 1315.5557, y: -439.61548}
+  m_AnchoredPosition: {x: -1.1999512, y: -299.88892}
+  m_SizeDelta: {x: 1383.3193, y: -439.61548}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2078510888
 MonoBehaviour:

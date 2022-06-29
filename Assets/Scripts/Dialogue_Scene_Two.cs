@@ -26,6 +26,7 @@ public class Dialogue_Scene_Two : MonoBehaviour
         if (ActivarPanelesDialogo.isPanelActive == true)
         {
             StartDialogue();
+            FindObjectOfType<AudioManager>().Play("Linea de Dialogo 5");
             ActivarPanelesDialogo.isPanelActive = false;
         }
 
@@ -66,10 +67,27 @@ public class Dialogue_Scene_Two : MonoBehaviour
             index++;
             textComponent.text = string.Empty;
             StartCoroutine(TypeLine());
+
+            switch (index)
+            {
+                case 1:
+                    FindObjectOfType<AudioManager>().Pause("Linea de Dialogo 5");
+                    FindObjectOfType<AudioManager>().Play("Linea de Dialogo 6");
+                    break;
+                case 2:
+                    FindObjectOfType<AudioManager>().Pause("Linea de Dialogo 6");
+                    FindObjectOfType<AudioManager>().Play("Linea de Dialogo 7");
+                    break;
+                case 3:
+                    FindObjectOfType<AudioManager>().Pause("Linea de Dialogo 7");
+                    FindObjectOfType<AudioManager>().Play("Linea de Dialogo 8");
+                    break;
+            }
         }
         else
         {
             index = 4;
+            FindObjectOfType<AudioManager>().Pause("Linea de Dialogo 8");
             gameObject.SetActive(false);
             SceneManager.LoadScene("Laberinto");
         }

@@ -13,8 +13,8 @@ public class ExManager : MonoBehaviour
     {
         men = GameObject.FindGameObjectWithTag("Player");
         //men.GetComponent<Camera>().enabled = false;
-        men.transform.GetChild(8).gameObject.SetActive(false);
         Invoke("Relic", 0.5f);
+        men.transform.GetChild(8).gameObject.SetActive(false);
     }
 
     void Relic()
