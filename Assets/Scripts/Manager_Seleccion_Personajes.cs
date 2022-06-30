@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Manager_Seleccion_Personajes : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class Manager_Seleccion_Personajes : MonoBehaviour
     public GameObject panel_Saludo_Femenino;
     public GameObject select_Masculino;
     public GameObject select_Femenino;
+    public GameObject seleccionadoM;
+    public GameObject seleccionadoF;
 
     public bool masculino;
     public bool femenino;
@@ -40,6 +43,24 @@ public class Manager_Seleccion_Personajes : MonoBehaviour
         if (masculino == false && femenino == false)
         {
             masculino = true;
+        }
+
+        if (masculino == true)
+        {
+            seleccionadoM.GetComponent<Image>().color = Color.green;
+        }
+        else
+        {
+            seleccionadoM.GetComponent<Image>().color = Color.white;
+        }
+
+        if (femenino == true)
+        {
+            seleccionadoF.GetComponent<Image>().color = Color.green;
+        }
+        else
+        {
+            seleccionadoF.GetComponent<Image>().color = Color.white;
         }
 
         if (Dialogue_Scene_One.index == 4)
@@ -72,6 +93,7 @@ public class Manager_Seleccion_Personajes : MonoBehaviour
     {
         GuardarPersonaje();
         StartCoroutine(SaludoPersonaje());
+        FindObjectOfType<AudioManager>().Play("Efecto de Seleccion");
     }
 
     IEnumerator SaludoPersonaje()

@@ -5,10 +5,10 @@ using UnityEngine;
 public class ActivarPanelesDialogo : MonoBehaviour
 {
     public GameObject panel_Dialogos_1;
+    public GameObject panel_Dialogos_2;
 
     public static bool isPanelActive;
 
-    // Start is called before the first frame update
     void Start()
     {
         panel_Dialogos_1.SetActive(false);
@@ -18,5 +18,11 @@ public class ActivarPanelesDialogo : MonoBehaviour
     {
         isPanelActive = true;
         panel_Dialogos_1.SetActive(true);
+    }
+
+    public void ActivarPanelDialogosDos()
+    {
+        isPanelActive = true;
+        panel_Dialogos_2.SetActive(true);
     }
 }

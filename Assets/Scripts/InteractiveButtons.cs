@@ -5,10 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class InteractiveButtons : MonoBehaviour
 {
-
     public void BackToGameEx()
     {
-        ExManager.men.transform.GetChild(8).gameObject.SetActive(true);
+        ExManager.men.transform.GetChild(2).gameObject.SetActive(true);
+        ExManager.men.GetComponent<MovimientoReal>().enabled = true;
         SceneManager.LoadScene("Base");
     }
 

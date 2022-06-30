@@ -45,8 +45,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: Musica_Menu
-    clip: {fileID: 8300000, guid: 5699dddcce16c4543b95951c4ce0e092, type: 3}
-    volume: 0.75
+    clip: {fileID: 8300000, guid: f90bbee1e2e5c9c489e4c50a98e0c61f, type: 3}
+    volume: 0.5
     pitch: 1
     loop: 1
     source: {fileID: 0}
@@ -57,55 +57,79 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: Linea de Dialogo 1
-    clip: {fileID: 8300000, guid: 36d23f6a002b3a24fa10e951d4f73ac6, type: 3}
+    clip: {fileID: 8300000, guid: c73f3a0a417f5e04bb4378258f5d1aa9, type: 3}
     volume: 0.75
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Linea de Dialogo 2
-    clip: {fileID: 8300000, guid: 41b17691ad6a7084ab8f4ff54c8e0977, type: 3}
+    clip: {fileID: 8300000, guid: b48032ffc9c1ef741bfd196835f55d61, type: 3}
     volume: 0.75
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Linea de Dialogo 3
-    clip: {fileID: 8300000, guid: 36d23f6a002b3a24fa10e951d4f73ac6, type: 3}
+    clip: {fileID: 8300000, guid: c73f3a0a417f5e04bb4378258f5d1aa9, type: 3}
     volume: 0.75
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Linea de Dialogo 4
-    clip: {fileID: 8300000, guid: 41b17691ad6a7084ab8f4ff54c8e0977, type: 3}
+    clip: {fileID: 8300000, guid: b48032ffc9c1ef741bfd196835f55d61, type: 3}
     volume: 0.75
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Linea de Dialogo 5
-    clip: {fileID: 8300000, guid: 36d23f6a002b3a24fa10e951d4f73ac6, type: 3}
+    clip: {fileID: 8300000, guid: c73f3a0a417f5e04bb4378258f5d1aa9, type: 3}
     volume: 0.75
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Linea de Dialogo 6
-    clip: {fileID: 8300000, guid: 41b17691ad6a7084ab8f4ff54c8e0977, type: 3}
+    clip: {fileID: 8300000, guid: b48032ffc9c1ef741bfd196835f55d61, type: 3}
     volume: 0.75
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Linea de Dialogo 7
-    clip: {fileID: 8300000, guid: 36d23f6a002b3a24fa10e951d4f73ac6, type: 3}
+    clip: {fileID: 8300000, guid: c73f3a0a417f5e04bb4378258f5d1aa9, type: 3}
     volume: 0.75
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Linea de Dialogo 8
-    clip: {fileID: 8300000, guid: 41b17691ad6a7084ab8f4ff54c8e0977, type: 3}
+    clip: {fileID: 8300000, guid: b48032ffc9c1ef741bfd196835f55d61, type: 3}
     volume: 0.75
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: Efectos_Sonido_4
-    clip: {fileID: 0}
+  - name: Linea de Dialogo 9
+    clip: {fileID: 8300000, guid: c73f3a0a417f5e04bb4378258f5d1aa9, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Linea de Dialogo 10
+    clip: {fileID: 8300000, guid: b48032ffc9c1ef741bfd196835f55d61, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Linea de Dialogo 11
+    clip: {fileID: 8300000, guid: c73f3a0a417f5e04bb4378258f5d1aa9, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Linea de Dialogo 12
+    clip: {fileID: 8300000, guid: b48032ffc9c1ef741bfd196835f55d61, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Efecto de Seleccion
+    clip: {fileID: 8300000, guid: 9b09b2ec88e6c934eb8bc2a7f9b3006e, type: 3}
     volume: 0.75
     pitch: 1
     loop: 0

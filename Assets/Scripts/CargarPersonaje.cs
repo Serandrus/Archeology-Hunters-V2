@@ -10,8 +10,7 @@ public class CargarPersonaje : MonoBehaviour
     public bool masculino;
     public bool femenino;
 
-    // Update is called once per frame
-    void Update()
+    private void Awake()
     {
         masculino = PlayerPrefs.GetInt("masculinoSelected") == 1;
         femenino = PlayerPrefs.GetInt("femeninoSelected") == 1;

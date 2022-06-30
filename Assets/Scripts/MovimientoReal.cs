@@ -7,9 +7,6 @@ public class MovimientoReal : MonoBehaviour
 {
     public static MovimientoReal instance = null;
     public Text gpsTextOut;
-
-    //public Text muestra;
-    //public GpsTracking gpsTracking;
     public Vector3 coordenadas;
     public Vector3 anchor = new Vector3(6.264580000578248f, 0, -75.5626535619031f);
     public GameObject ancla;
@@ -29,9 +26,9 @@ public class MovimientoReal : MonoBehaviour
             Destroy(gameObject);
         }
 
+        ancla.GetComponent<GameObject>();
         ancla.transform.position = anchor;
         StartCoroutine(GPSLocation());
-        
         DontDestroyOnLoad(this);
     }
 
@@ -70,7 +67,7 @@ public class MovimientoReal : MonoBehaviour
 
                 if (maxWait < 3)
                 {
-                    gpsTextOut.text = "Timed Out";
+                    //gpsTextOut.text = "Timed Out";
                     print("Timed Out");
                     yield return new WaitForSeconds(3);
                 }
@@ -89,4 +86,6 @@ public class MovimientoReal : MonoBehaviour
             }
         }
     }
+
+
 }

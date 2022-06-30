@@ -1484,6 +1484,8 @@ MonoBehaviour:
   panel_Saludo_Femenino: {fileID: 258983203}
   select_Masculino: {fileID: 1380211931}
   select_Femenino: {fileID: 1205639581}
+  seleccionadoM: {fileID: 278691385}
+  seleccionadoF: {fileID: 2020086285}
   masculino: 0
   femenino: 0
 --- !u!1 &1380211931
@@ -2123,6 +2125,12 @@ PrefabInstance:
     - {fileID: 6109135773779531090, guid: 5bc857917014f844397b3eecb980d6d8, type: 3}
     - {fileID: 8691415449173963777, guid: 5bc857917014f844397b3eecb980d6d8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5bc857917014f844397b3eecb980d6d8, type: 3}
+--- !u!1 &2020086285 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5688485156172378315, guid: 2a22dfbd6d89f46449ed3b91edb9f1c8,
+    type: 3}
+  m_PrefabInstance: {fileID: 5688485156137526454}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2045050428
 PrefabInstance:
   m_ObjectHideFlags: 0
