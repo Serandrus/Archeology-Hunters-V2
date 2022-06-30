@@ -17,6 +17,7 @@ public class LabGameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        FindObjectOfType<AudioManager>().Play("Musica Laberinto");
         exit.GetComponent<Renderer>().material.color = Color.red;
         exitButton.GetComponent<Image>().material.color = Color.white;
         PanelInicio.SetActive(true);
@@ -71,6 +72,7 @@ public class LabGameManager : MonoBehaviour
     {
         if (contador == 3)
         {
+            FindObjectOfType<AudioManager>().Pause("Musica Laberinto");
             SceneManager.LoadScene("Base");
         }
     }

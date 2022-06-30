@@ -13,6 +13,8 @@ public class ExManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        FindObjectOfType<AudioManager>().Play("Musica Excavacion");
+
         imagenReliquia.SetActive(false);
         men = GameObject.FindGameObjectWithTag("Player");
         men.GetComponent<MovimientoReal>().enabled = false;
@@ -41,6 +43,8 @@ public class ExManager : MonoBehaviour
         yield return new WaitForSeconds(3);
         men.GetComponent<MovimientoReal>().enabled = true;
         men.transform.GetChild(2).gameObject.SetActive(true);
+
+        FindObjectOfType<AudioManager>().Pause("Musica Excavacion");
         SceneManager.LoadScene("Base");
     }
 }

@@ -28,6 +28,7 @@ public class Manager_Seleccion_Personajes : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        FindObjectOfType<AudioManager>().Play("Musica Seleccion");
         personaje_Masculino.SetActive(false);
         personaje_Femenino.SetActive(false);
         boton_Seleccion.SetActive(false);
@@ -110,6 +111,7 @@ public class Manager_Seleccion_Personajes : MonoBehaviour
             }
         }
         yield return new WaitForSeconds(3);
+        FindObjectOfType<AudioManager>().Pause("Musica Seleccion");
         SceneManager.LoadScene("Base");
     }
 

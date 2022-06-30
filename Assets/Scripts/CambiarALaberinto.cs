@@ -17,4 +17,9 @@ public class CambiarALaberinto : MonoBehaviour
     {
         SceneManager.LoadScene("Excavar");
     }
+
+    public void GotoDate()
+    {
+        SceneManager.LoadScene("Datacion_Fechas");
+    }
 }

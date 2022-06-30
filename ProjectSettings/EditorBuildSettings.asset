@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Excavar.unity
     guid: 6e28faedbe6c7724d82fd21a6d35421f
+  - enabled: 1
+    path: Assets/Scenes/Datacion_Fechas.unity
+    guid: 6cad163652951e34a964340620019cac
   m_configObjects: {}

@@ -50,11 +50,11 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
-  - name: Musica_Seleccion
-    clip: {fileID: 0}
-    volume: 0.75
-    pitch: 0
-    loop: 0
+  - name: Musica Seleccion
+    clip: {fileID: 8300000, guid: 820791a588fd63942be9d790b19b3dc1, type: 3}
+    volume: 0.25
+    pitch: 1
+    loop: 1
     source: {fileID: 0}
   - name: Linea de Dialogo 1
     clip: {fileID: 8300000, guid: c73f3a0a417f5e04bb4378258f5d1aa9, type: 3}
@@ -133,4 +133,28 @@ MonoBehaviour:
     volume: 0.75
     pitch: 1
     loop: 0
+    source: {fileID: 0}
+  - name: Item Pick up
+    clip: {fileID: 8300000, guid: 4b8de76eebea5a049ad6d2e782a92e53, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Musica Laberinto
+    clip: {fileID: 8300000, guid: 820791a588fd63942be9d790b19b3dc1, type: 3}
+    volume: 0.58
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Musica Excavacion
+    clip: {fileID: 8300000, guid: 820791a588fd63942be9d790b19b3dc1, type: 3}
+    volume: 0.25
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Musica Datacion
+    clip: {fileID: 8300000, guid: 820791a588fd63942be9d790b19b3dc1, type: 3}
+    volume: 0.25
+    pitch: 1
+    loop: 1
     source: {fileID: 0}

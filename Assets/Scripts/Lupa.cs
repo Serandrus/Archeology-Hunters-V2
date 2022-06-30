@@ -8,6 +8,7 @@ public class Lupa : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            FindObjectOfType<AudioManager>().Play("Item Pick up");
             Destroy(gameObject);
             LabGameManager.contador++;
         }

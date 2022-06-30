@@ -18,6 +18,8 @@ public class DatacionFechasManager : MonoBehaviour
 
     void Start()
     {
+        FindObjectOfType<AudioManager>().Play("Musica Datacion");
+
         panelInicio.SetActive(true);
         panelJuego.SetActive(false);
         panelCorrecto.SetActive(false);
@@ -47,11 +49,13 @@ public class DatacionFechasManager : MonoBehaviour
 
     public void Continuar ()
     {
+        FindObjectOfType<AudioManager>().Pause("Musica Datacion");
         SceneManager.LoadScene("Base");
     }
 
     public void Menu()
     {
+        FindObjectOfType<AudioManager>().Pause("Musica Datacion");
         SceneManager.LoadScene("Menu");
     }
 
